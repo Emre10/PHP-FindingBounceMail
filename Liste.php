@@ -18,6 +18,7 @@ $Email__Full[] = 'out of disk space';
 $Email__Full[] = 'out of diskspace';
 $Email__Full[] = 'over disk quota';
 $Email__Full[] = 'over quota';
+$Email__Full[] = 'Over quota';
 $Email__Full[] = 'over the allowed quota';
 $Email__Full[] = 'problem with the recipient\'s mailbox';
 $Email__Full[] = 'quota exceeded';
@@ -29,11 +30,16 @@ $Email__Full[] = 'status: 5.2.2';
 $Email__Full[] = 'status: 5.2.3';
 $Email__Full[] = 'status: 5.3.3';
 
+
 $Email__NotExist[] = '/var/mail/nobody';
-$Email__NotExist[] = '550 5.1.1';
-$Email__NotExist[] = '550 5.5.0';
+$Email__NotExist[] = 'Mail Refused - Address Recipient Unknown';//e
+$Email__NotExist[] = 'Recipient address rejected: User unknown';//e
+$Email__NotExist[] = 'Requested action not taken: mailbox unavailable.';//e
+$Email__NotExist[] = 'undeliverable address';//e
 $Email__NotExist[] = '550 "Unknown User"'; //e
 $Email__NotExist[] = 'account disabled';//e
+$Email__NotExist[] = '550 5.1.1';
+$Email__NotExist[] = '550 5.5.0';
 $Email__NotExist[] = 'account expired';
 $Email__NotExist[] = 'account inactive';
 $Email__NotExist[] = 'account suspended';
@@ -115,6 +121,7 @@ $Email__NotExist[] = 'unknown address';
 $Email__NotExist[] = 'unknown recipient';
 $Email__NotExist[] = 'unknown user';
 $Email__NotExist[] = 'unrouteable address';
+$Email__NotExist[] = 'Unrouteable address';
 $Email__NotExist[] = 'user doesn\'t have';
 $Email__NotExist[] = 'user unknown';
 $Email__NotExist[] = 'x-notes; 550 5.1.1';
@@ -122,6 +129,10 @@ $Email__NotExist[] = 'x-notes; recipient\'s domino directory';
 $Email__NotExist[] = '$B%G%#%l%/%H%j$K$O8+$D$+$j$^$;$s!#'; //* Returned from japanese domino . Somehow means directory is not found.
 
 
+
+
+$Email__Banned[] = 'Connection refused';//e
+$Email__Banned[] = '_spam_';
 $Email__Banned[] = '_spam_';
 //$Email__Banned[] = '550 5.7.1';
 $Email__Banned[] = '550 access denied';
@@ -217,6 +228,7 @@ $Email__Banned[] = 'status: 5.7.1';
 $Email__Banned[] = 'support.proofpoint.com';
 $Email__Banned[] = 'suspected spam';
 $Email__Banned[] = 'suspicious url in message body';
+$Email__Banned[] = 'temporarily deferred due to user complaints';//e
 $Email__Banned[] = 'temporarily deferred';
 $Email__Banned[] = 'transaction failed';
 $Email__Banned[] = 'unacceptable content';
