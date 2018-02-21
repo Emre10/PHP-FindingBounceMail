@@ -24,7 +24,7 @@
 
 // webmail için imap_open ("{webmail.*******.com:143/notls}INBOX", "****@******.com", "sifre")
 // gmail için : imap_open ("{imap.gmail.com:993/imap/ssl}INBOX", "********@gmail.com", "sifre")
-	if (!$MailKutusu = imap_open ("{webmail.turkiyeegitim.com:143/notls}INBOX", "bilgi@turkiyeegitim.com", "2NF1Xw3Vk7hpfztn"))
+	if (!$MailKutusu = imap_open ("{webmail.******.com:143/notls}INBOX", "*****", "******"))//Edit this line
 	{
 		die ('Mail sunucusuna bağlanılamadı!');
 	}
